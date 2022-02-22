@@ -10,3 +10,13 @@ export default NextAuth({
     }),
   ],
 })
+
+// FaunaDB - Melhor banco para se utilizar com Serveless
+// Banco Relacional, orientado a Documento
+// HTTP - nao precisam manter um pull de conexao em aberto
+// 1000 autenticacao ()
+// DynamoDB - AWS
+
+
+// PostgreeSQL, MongoDB - Criar uma nova conexao com o banco quando uma funcao serveless for chamado, isso é custoso.
+// 24h (1 conexao)
